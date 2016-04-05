@@ -15,7 +15,7 @@ priority but by no means prevents the publication of invalid research. In this r
 developers wishing to be apart of the publishing process will be provided Publishing Keys to help ensure quality
 articles are chosen.  
 
-    Future and potential resources provided by PPCW consist of but are not limited to a block explorer, 
+   Future and potential resources provided by PPCW consist of but are not limited to a block explorer, 
 PSA (Peercoin Simple Assets) web client, and financial market data accompanied with charts covering multiple 
 exchanges.  An initial outline of the website can be found at the following address http://www.peercoinwisdom.com
 
