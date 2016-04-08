@@ -1,45 +1,39 @@
-from flask import Flask, render_template, request, redirect, url_for, abort, session
+from flask import Flask, render_template, url_for, redirect, abort,request,session
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'F34TF$($e34D';
+app.config['SECRET_KEY'] = '71472D2BB01783E5C6D65667E7F0B066AC7D343CF6129432169E3B99E63076AF';
 
 @app.route('/')
-def home():
-    return render_template('index.html')
+def homepage():
+    return render_template("index.html")
 
-@app.route('/chart')
-def chartpage():
-    pair = ""
-    return render_template('chart.html',pair=pair)
+@app.route('/chart/<exchange>/<pair>')
+def chartpage(exchange,pair):
+    return render_template("chart.html",exchange=exchange,pair=pair)
 
-@app.route('/Discussion')
-def chartpage():
-    pair = ""
-    return render_template('discussion.html',pair=pair)
+@app.route('/Journal')
+def journal():
+    user= ""
+    return render_template('journal.html',user=user)
 
 @app.route('/PeerReview')
-def chartpage():
+def peerreview():
     pair = ""
     return render_template('peerreview.html',pair=pair)
 
 @app.route('/Resources')
-def chartpage():
+def resources():
     pair = ""
     return render_template('resources.html',pair=pair)
 
 @app.route('/Explorer')
-def chartpage():
+def explorer():
+    return render_template('explorer.html')
+
+@app.route('/PSA')
+def assets():
     pair = ""
-    return render_template('explorer.html',pair=pair)
-
-@app.route('/Assets')
-def chartpage():
-    pair = ""
-    return render_template('assets.html',pair=pair)
-
-
-
-
+    return render_template('PSA.html',pair=pair)
 
 @app.route('/signup', methods=['POST'])
 def signup():

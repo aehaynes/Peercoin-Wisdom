@@ -1,22 +1,40 @@
-{% include "header.html" %}
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" cros$
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+{% include 'header.html' %}
+
+<div style="height: 88%">
 <!-- TradingView Widget BEGIN -->
 <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
 <script type="text/javascript">
 new TradingView.widget({
   "autosize": true,
-  "symbol": "BTCE:PPCUSD",
-  "interval": "D",
+  "symbol": "{{ exchange }}:{{ pair }}",
+  "interval": "240",
   "timezone": "Etc/UTC",
   "theme": "White",
   "style": "1",
   "locale": "en",
   "toolbar_bg": "#f1f3f6",
+  "details": true,
   "withdateranges": true,
   "hide_side_toolbar": false,
+  "hideideasbutton": true,
   "show_popup_button": true,
   "popup_width": "1000",
   "popup_height": "650",
+  "studies": [
+    "RSI@tv-basicstudies",
+    "DM@tv-basicstudies"
+  ],
   "no_referral_id": true
 });
 </script>
 <!-- TradingView Widget END -->
+</div>
+<script type = "text/javascript" src="http://www.peercoinwisdom.com/static/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</html>
+

@@ -1,13 +1,5 @@
 
-<html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<meta name="viewport" content = "width=device-width, initial-scale=1.0">
-<head>
-</head>
-
-<body class = "body">
 <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -16,59 +8,65 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">  Peercoin Wisdom  <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span></a>
+      <a class="navbar-brand" href="/" style="color:green">  PeercoinWisdom    <span class="glyphicon glyphicon-leaf" aria-hidden="true" style="color: green"></span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Discussion</a></li>
-		<li><a href="#">Peer Review</a></li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a>Exchange Charts:</a></li>
+      <ul class="nav navbar-nav" style="width: 400px">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Journal">Journal</a></li>
+                <li><a href="/PeerReview">Peer Review</a></li>
   <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">BTCe<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-			<li><a href="/chart.html"> PPC/USD </a></li>
-			<li><a href="#"> BTC/USD </a></li>
-			<li><a href="#"> LTC/USD </a></li>
-			<li><a href="#"> NMC/USD </a></li>
-			<li><a href="#"> NVC/USD </a></li>
-			<li class="divider"></li>
-			<li><a href="#"> PPC/BTC </a></li>
-			<li><a href="#"> LTC/BTC </a></li>
-			<li><a href="#"> NMC/BTC </a></li>
-			<li><a href="#"> NVC/BTC </a></li>
+                        <li><a href="/PSA"> PSA Web Client </a></li>
+                        <li><a href="/Explorer"> Block Explorer </a></li>
           </ul>
         </li>
-  
-    <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Poloniex<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-			<li><a href="#"> PPC/BTC </a></li>
-			<li><a href="#"> LTC/BTC </a></li>
-			<li><a href="#"> NMC/BTC </a></li>
-			<li><a href="#"> ETH/BTC </a></li>
-			<li><a href="#"> FCT/BTC </a></li>
-			<li><a href="#"> NBT/BTC </a></li>
-          </ul>
-        </li>
+                <li></li>
+                <li></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 
+<ul class="nav navbar-nav navbar-center" style="width: 200px">
+      <a class="navbar-brand" style="color: green">Exchange Charts <span class="glyphicon glyphicon-stats" aria-hidden="true" style="color: green"></span></a>
+</ul>
+<ul class="nav navbar-nav navbar-center" style="width: 200px">
+
+ 	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> BTCe<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+                        <li><a href="/chart/BTCE/PPCUSD"> PPC/USD </a></li>
+                        <li><a href="/chart/BTCE/BTCUSD"> BTC/USD </a></li>
+                        <li><a href="/chart/BTCE/LTCUSD"> LTC/USD </a></li>
+                        <li><a href="/chart/BTCE/NMCUSD"> NMC/USD </a></li>
+                        <li><a href="/chart/BTCE/NVCUSD"> NVC/USD </a></li>
+                        <li class="divider"></li>
+                        <li><a href="/chart/BTCE/PPCBTC"> PPC/BTC </a></li>
+                        <li><a href="/chart/BTCE/LTCBTC"> LTC/BTC </a></li>
+                        <li><a href="/chart/BTCE/NMCBTC"> NMC/BTC </a></li>
+                        <li><a href="/chart/BTCE/NVCBTC"> NVC/BTC </a></li>
+
+ 	</ul> 
+      </li> 
+    
+<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">  Poloniex<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+                        <li><a href="/chart/POLONIEX/PPCBTC"> PPC/BTC </a></li>
+                        <li><a href="/chart/POLONIEX/LTCBTC"> LTC/BTC </a></li>
+                        <li><a href="/chart/POLONIEX/NMCBTC"> NMC/BTC </a></li>
+                        <li><a href="/chart/POLONIEX/ETHBTC"> ETH/BTC </a></li>
+                        <li><a href="/chart/POLONIEX/FCTBTC"> FCT/BTC </a></li>
+                        <li><a href="/chart/POLONIEX/NBTBTC"> NBT/BTC </a></li>
+          </ul>
+ </li>
+ </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
 <script type = "text/javascript" src="http://www.peercoinwisdom.com/static/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-</html>
+
