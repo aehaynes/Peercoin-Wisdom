@@ -1,7 +1,16 @@
 from flask import Flask, render_template, url_for, redirect, abort,request,session
+from subprocess import PIPE,Popen
+from block_frame import blkCount, getBlock, getDifficulty, showChain, to_html
+import pandas
+import subprocess
+
+ppcoind_path = "/home/peer/ppcoin/src/ppcoind"
+
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '71472D2BB01783E5C6D65667E7F0B066AC7D343CF6129432169E3B99E63076AF';
+app.config['SECRET_KEY'] = '71472D2BB01783E5C6D65667E7F0B066AC7D343CF6129432169E3B99E6307SAE';
+
+
 
 @app.route('/')
 def homepage():
@@ -26,7 +35,7 @@ def resources():
     pair = ""
     return render_template('resources.html',pair=pair)
 
-@app.route('/Explorer')
+@app.route('/Explorer/')
 def explorer():
     return render_template('explorer.html')
 
