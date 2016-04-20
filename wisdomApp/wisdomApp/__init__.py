@@ -8,9 +8,13 @@ ppcoind_path = "/home/peer/ppcoin/src/ppcoind"
 
 
 app = Flask(__name__)
+<<<<<<< HEAD
 app.config['SECRET_KEY'] = '71472D2BB01783E5C6D65667E7F0B066AC7D343CF6129432169E3B99E6307SAE';
 
 
+=======
+app.config['SECRET_KEY'] = '';
+>>>>>>> d164116109e49269809131e3507278a9f2bffd13
 
 @app.route('/')
 def homepage():
